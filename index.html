@@ -1,0 +1,35 @@
+---
+layout: page
+---
+
+<h1>Iznajmljivanje kajaka za boravak na vodi, u pravoj prirodi</h1>
+
+<div class='row'>
+  <div class='col-md'>
+    <img src="assets/iznajmljivanje kajaka jednoseda feelfree nomad novi sad.jpg" alt="Iznajmi Kajak Novi Sad" title="Iznajmi Kajak Novi Sad">
+  </div>
+  <div class='col-md'>
+    <h3>
+      CENA: {{ site.data.prices.kajak_jednosed }} din na dan
+    </h3>
+    <ul>
+      <li>Preuzimanje i vraćanje na našoj lokaciji (Sime Sarajlije 40, Adice)</li>
+      <li>Mogućnost iznajmljivanja na više dana (cena je {{ site.data.prices.cena_za_dodatni_dan }} din za dodatni dan)</li>
+    </ul>
+    <a href="/naruci/" class='btn btn-primary btn-block'>Popunite formular za rezervaciju kajaka</a>
+  </div>
+</div>
+
+<hr>
+
+{% assign last_post = site.posts.first %}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+Poslenja vest <span class="post-meta">{{ last_post.date | date: date_format }}</span>
+<h3>
+  <a class="post-link" href="{{ last_post.url | relative_url }}">
+    {{ last_post.title | escape }}
+  </a>
+</h3>
+
+Pogledajte ostale vesti na stranici za <a href='/vesti'>VESTI</a>
+

@@ -1,0 +1,18 @@
+# Iznajmljivanje Kajaka Novi Sad
+
+Photos are resized to max width 680 (use gimp)
+Check all files that are not commited with this command
+
+```
+image.rb resize_if_gt 680 assets/posts/*.jpg
+# Ignoring assets/posts/...jpg
+```
+
+Add watermark
+
+```
+image.rb watermark iznajmljivanje-kajaka-novi-sad.trk.in.rs assets/posts/*.jpg
+```
+
+# Deploy
+
