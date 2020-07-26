@@ -20,34 +20,39 @@ K2 Dužina: 380cm, Širina: 83cm, Težina: 32kg, Nosivost: 250kg.
     </div>
   </div>
   <div class="form-group row">
-    <label for="ime" class="col-sm-4 col-form-label">Naziv kompanije i PIB</label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" name='ime' id="ime" aria-describedby="imeHelp" placeholder="Moj doo 123456789" required>
-    </div>
-  </div>
-  <div class="form-group row">
     <label for="telefon" class="col-sm-4 col-form-label">Telefon</label>
     <div class='col-sm-8'>
       <input type="text" class="form-control" name='telefon' id="telefon" aria-describedby="telefonHelp" placeholder="063....." required>
     </div>
   </div>
   <div class="form-group row">
-    <label for="vremeisporuke" class="col-sm-4 col-form-label">Datum i vreme isporuke</label>
+    <label for="datum" class="col-sm-4 col-form-label">Datum</label>
     <div class='col-sm-8'>
-      <input type="text" class="form-control" name='vreme dostave' id="vremeisporuke" aria-describedby="vremeisporukeHelp" placeholder="Ponedeljak u 15h">
-      <small id="vremeisporukeHelp" class="form-text text-muted">Isporuka je u Sime Milutinovića Sarajlije 40, Novi Sad</small>
+      <input type="date" class="form-control" name='datum' id="datum" aria-describedby="datum" placeholder="Ponedeljak u 17:30h">
     </div>
   </div>
   <div class="form-group row">
-    <label for="vremevracanja" class="col-sm-4 col-form-label">Datum i vreme vraćanja</label>
+    <label for="kajak" class="col-sm-4 col-form-label">Kajak</label>
     <div class='col-sm-8'>
-      <input type="text" class="form-control" name='vreme preuzimanja' id="vremevracanja" aria-describedby="telefonHelp" placeholder="Sutradan u 12h">
+      <select name='kajak' class='form-control'>
+        <option value='k1'>K1 jednosed {{ site.data.prices.kajak_jednosed }}din/h</option>
+        <option value='k2'>K2 dvosed {{ site.data.prices.kajak_dvosed }}din/h</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="datum" class="col-sm-4 col-form-label">Vreme</label>
+    <div class='col-sm-8'>
+      <select name='vreme' class='form-control'>
+        <option value='17:30'>17:30</option>
+        <option value='18:30'>18:30</option>
+      </select>
     </div>
   </div>
   <div class="form-group row">
     <label for="poruka" class="col-sm-4 col-form-label">Vaša poruka</label>
     <div class='col-sm-8'>
-      <textarea class="form-control" value='a' name='poruka' id="poruka" rows="5" placeholder="Hteo bi da ponesem kajak na jezero. Imamo predhodno iskustvo sa veslanjem"></textarea>
+      <textarea class="form-control" value='a' name='poruka' id="poruka" rows="5" placeholder="Hocu da veslam kajak. Znam da plivam"></textarea>
     </div>
   </div>
   <div class='form-group row'>
@@ -59,4 +64,3 @@ K2 Dužina: 380cm, Širina: 83cm, Težina: 32kg, Nosivost: 250kg.
     </div>
   </div>
 </form>
-<h3><b>ili nas pozovite na:</b> <a href="tel:0637298539">063 7298539</a></h3>
